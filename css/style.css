@@ -1,0 +1,144 @@
+.r1{
+    height: 20px;
+    width: 1250px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    /* overflow: hidden; */
+
+}
+.cntnt1{
+height: 20px;
+width: 500px;
+background-color: rgb(247, 244, 241);
+display: flex;
+position: relative;
+
+}
+
+
+.cntnt3{
+    height: 20px;
+    width: 200px;
+    background-color:blue;
+    display: flex;
+
+}
+.logo{
+    height: 50px;
+    width: 200px;
+    display: flex;
+}
+.logo img{
+    height: 50px;
+    width: 200px;
+
+
+}
+.home{
+    height: 20px;
+    width: 60px;
+    font: bold;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+}
+.cntnt2{
+height: 20px;
+width: 455px;
+background-color:  rgb(247, 244, 241);
+display: flex;
+position: relative;
+}
+.about{
+height: 20px;
+width: 75px;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0%;
+left: 0%;
+
+
+}
+.products{
+    height: 20px;
+    width: 74px;
+    display: flex;
+justify-content: center;
+align-items: center;
+top: 0%;
+left: 0%;
+}
+.download{
+    height: 20px;
+    width: 74px;
+    display: flex;
+justify-content: center;
+align-items: center;
+top: 0%;
+left: 0%;
+}
+.login{
+    height: 20px;
+    width: 74px;
+    display: flex;
+justify-content: center;
+align-items: center;
+top: 0%;
+left: 0%;
+}
+.contact{
+    height: 20px;
+    width: 74px;
+    display: flex;
+justify-content: center;
+align-items: center;
+top: 0%;
+left: 0%;
+}
+.help{
+    height: 20px;
+    width: 74ypx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+}
+.bodyline{
+    height:250px;
+    width: 1250px;
+    display: flex;
+
+}
+.class1{
+    height:250px;
+    width: 625px;
+    background-color: #d6e4ef;
+}
+.class2{
+    height:250px;
+    width: 625px;
+    background-color:#d9dcdf;
+}
+
+.pic{
+    height: 75px;
+    width: 1250px;
+    background-color: red;
+    object-fit: fill;
+}
+.pic img{
+    height: 75px;
+    width: 1250px;
+    object-fit:fill;
+}
+.form{
+    height: 400px;
+    width: 1250px;
+    background-color: rgb(213, 213, 240);
+}
