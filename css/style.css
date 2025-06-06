@@ -138,7 +138,7 @@ left: 0%;
     object-fit:fill;
 }
 .form{
-    height: 400px;
-    width: 1250px;
+    height: 200px;
+    width: auto;
     background-color: rgb(213, 213, 240);
 }
