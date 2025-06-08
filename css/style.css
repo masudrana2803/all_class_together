@@ -146,23 +146,44 @@ left: 0%;
 .facebook{
     width: 400px;
     height: auto;
-    background-color: #d9dcdf;
     margin: 0 auto;
 }
 
+.dob{
+    gap: 20px;
+}
+
+.dob input{
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+
+.dob #month{
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.dob #year{
+        width: 100px;
+    height: 40px;
+}
 .facebook h1{
     text-align: center;
-    background-color: none;
+    background-color: rgba(231, 231, 231, 0.735);
     color: blue;
-    background-color: white;
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 .facebook h2{
-    color: red;
     text-align: center;
     margin: 0px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .facebook h4{
@@ -172,3 +193,61 @@ left: 0%;
     border-style: solid red;
     border-bottom:none;
 }
+#Gender{
+    width: 500px;
+    display: flex;
+    gap: 25px;
+}
+.male{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 120px;
+        height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(218, 217, 217) solid 2px;
+border-radius: 5px;
+}
+.Female{
+    box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(218, 217, 217) solid 2px;
+border-radius: 5px;
+
+}
+
+.custom{
+    box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 120px;
+        height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(218, 217, 217) solid 2px;
+border-radius: 5px;
+
+}
+
+.cmn{
+    margin-top: 20px;
+}
+.cmn input{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
