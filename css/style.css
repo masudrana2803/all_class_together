@@ -142,3 +142,33 @@ left: 0%;
     width: auto;
     background-color: rgb(213, 213, 240);
 }
+
+.facebook{
+    width: 400px;
+    height: auto;
+    background-color: #d9dcdf;
+    margin: 0 auto;
+}
+
+.facebook h1{
+    text-align: center;
+    background-color: none;
+    color: blue;
+    background-color: white;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.facebook h2{
+    color: red;
+    text-align: center;
+    margin: 0px;
+}
+
+.facebook h4{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px ;
+    border-style: solid red;
+    border-bottom:none;
+}
