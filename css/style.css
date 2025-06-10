@@ -142,11 +142,26 @@ left: 0%;
     width: auto;
     background-color: rgb(213, 213, 240);
 }
+#fbody{
+background-color: rgb(189, 186, 186);
+    padding-bottom: 20px;
+
+}
+
+
+
+.fblogo{
+    text-align: center;
+    background-color: blue;
+}
 
 .facebook{
-    width: 400px;
+    width: 420px;
     height: auto;
     margin: 0 auto;
+    border: solid 2px red;
+    padding: 5px;
+    background-color: white;
 }
 
 .dob{
