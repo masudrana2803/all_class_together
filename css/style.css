@@ -237,7 +237,24 @@ padding-bottom: 20px;
     display: flex;
     gap: 25px;
 }
-.male{
+.gid label{
+    border: 2px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-right: 20px;
+    /* box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(218, 217, 217) solid 2px;
+    border-radius: 5px; */
+}
+.Female{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -248,11 +265,13 @@ padding-bottom: 20px;
     justify-content: center;
     align-items: center;
     border: rgb(218, 217, 217) solid 2px;
-border-radius: 5px;
+    border-radius: 5px;
+
 }
-.Female{
+
+.custom{
     box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     width: 120px;
@@ -261,23 +280,7 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     border: rgb(218, 217, 217) solid 2px;
-border-radius: 5px;
-
-}
-
-.custom{
-    box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    width: 120px;
-        height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: rgb(218, 217, 217) solid 2px;
-border-radius: 5px;
-
+    border-radius: 5px;
 }
 
 .cmn{
