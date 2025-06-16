@@ -78,6 +78,9 @@ ul,ol{
 }
 /*------mynavbar css end----  */
 /*------banner css start----  */
+#banner{
+    margin-top: 84px;
+}
 .bannerflexrow{
     width: 429px;
     display: flex;
@@ -132,13 +135,6 @@ ul,ol{
 
 }
 
-.banner img{
-    width: 856px;
-    height: 806px;
-    position: absolute;
-    top: 131px;
-    right: 0px;
-}
 #banner h3{
     width: 586px;
     font-size: 90px;
@@ -150,20 +146,83 @@ ul,ol{
 }
 .border{
     width: 335px;
-    border-bottom: 4px solid var(--prclr);
-
+    height: 4px;
+    background-color: var(--prclr);
+    margin-bottom: 62px;
 }
 
 #banner h3 span{
     font-weight: 700;
 }
 
+#banner p{
+    width: 353px;
+    font-size: 22px;
+    color: var(--prclr);
+    font-weight: 400;
+    font-family: var(--prclr);
+    margin-bottom: 44px;
+}
+
 .bannerflexrow{
+    height: 87px;
+}
+
+
+.banner{
+    width: 856px;
     height: 807px;
+    position: absolute;
+    top: 131px;
+    right: 0px;
 }
 /*------banner css end----  */
-/*------common css start----  */
-/*------common css end----  */
+/*------counter css start----  */
+#countdown{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+
+}
+
+.be{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    animation: rtg 2s linear infinite;
+}
+
+@keyframes rtg{
+    from{
+    transform: rotate(0deg)
+}
+to{
+transform: rotate(360deg);
+}
+  
+}
+
+
+.br{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 25%;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50% -50%); */
+
+}
+
+
+
+
+/*------counter css end----  */
 /*------common css start----  */
 /*------common css end----  */
 /*------common css start----  */
