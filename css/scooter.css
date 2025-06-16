@@ -1,0 +1,177 @@
+/* fonts links */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+/*------common css start----  */
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul,ol{
+    list-style: none;
+}
+:root{
+    --prclr:#42454A;
+    --prfnt:"Ubuntu", sans-serif;
+}
+
+/*------common css end----  */
+/*------mynavbar css start----  */
+.mynavbar img{
+    width: 70px;
+}
+
+#navli ul{
+    gap: 76px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--prclr);
+    font-family: var(--prfnt);
+}
+
+.commandbtn{
+    display: flex;
+    gap:24px;
+
+}
+.commandbtn a{
+        display: block;
+        height: 42px;
+        background-color:none;
+        gap: 20px;
+        color: var(--prclr);
+        font-family: var(--prfnt);
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        border-radius: 4px;
+    }
+
+.nav-item .active:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: yellowgreen;
+}
+.commandbtn a:hover{
+    background-color: var(--prclr);
+    color: white;
+}
+.commandbtn :nth-child(1){
+    width: 102px;
+}
+
+.commandbtn :nth-child(2){
+    width: 102px;
+}
+
+.navbar{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--prclr);
+}
+/*------mynavbar css end----  */
+/*------banner css start----  */
+.bannerflexrow{
+    width: 429px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.buyicon{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.buyicon img{
+    width: 58px;
+}
+
+.buynow a{
+    width: 82px;
+    color: var(--prclr);
+    font-size: 20px;
+    font-family: var(--prfnt);
+    font-weight: 500;
+}
+
+.watch{
+        width: 87px;
+}
+
+.watch h4{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--prfnt);
+    color: var(--prclr);
+}
+.playbtn{
+    width: 80px;
+    height: 80px;
+
+}
+
+/* #banner .bannerflexrow .playbtn img{
+    position: relative;
+} */
+
+.play img{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+.banner img{
+    width: 856px;
+    height: 806px;
+    position: absolute;
+    top: 131px;
+    right: 0px;
+}
+#banner h3{
+    width: 586px;
+    font-size: 90px;
+    font-weight: 100;
+    font-family: var(--prfnt);
+    color: var(--prclr);
+    text-transform: uppercase;
+    padding-bottom: 93px;
+}
+.border{
+    width: 335px;
+    border-bottom: 4px solid var(--prclr);
+
+}
+
+#banner h3 span{
+    font-weight: 700;
+}
+
+.bannerflexrow{
+    height: 807px;
+}
+/*------banner css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
+/*------common css end----  */
+/*------common css start----  */
