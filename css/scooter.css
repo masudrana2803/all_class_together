@@ -81,7 +81,7 @@ ul,ol{
 #banner{
     margin-top: 84px;
 }
-.bannerflexrow{
+.bnrrow{
     width: 429px;
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@ ul,ol{
 }
 
 .watch{
-        width: 87px;
+        width: 120px;
 }
 
 .watch h4{
@@ -116,24 +116,33 @@ ul,ol{
     font-family: var(--prfnt);
     color: var(--prclr);
 }
-.playbtn{
-    width: 80px;
-    height: 80px;
-
+.bnrrow a .rotatebtn img{
+animation: ghuro 2s linear infinite;
 }
 
+@keyframes ghuro{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}
+
+
+
+.play{
+    width: 9px;
+    height: 9px;
+    margin-left: -93px;
+    margin-top: -14px;
+}
 /* #banner .bannerflexrow .playbtn img{
     position: relative;
 } */
 
-.play img{
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 
-}
+
 
 #banner h3{
     width: 586px;
@@ -164,7 +173,7 @@ ul,ol{
     margin-bottom: 44px;
 }
 
-.bannerflexrow{
+.bnrrow{
     height: 87px;
 }
 
@@ -178,47 +187,6 @@ ul,ol{
 }
 /*------banner css end----  */
 /*------counter css start----  */
-#countdown{
-    width: 400px;
-    height: 400px;
-    background-color: red;
-    position: relative;
-
-}
-
-.be{
-    width: 300px;
-    height: 300px;
-    background-color: green;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    animation: rtg 2s linear infinite;
-}
-
-@keyframes rtg{
-    from{
-    transform: rotate(0deg)
-}
-to{
-transform: rotate(360deg);
-}
-  
-}
-
-
-.br{
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-    border-radius: 25%;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50% -50%); */
-
-}
-
 
 
 
