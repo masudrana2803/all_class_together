@@ -1,7 +1,16 @@
 .task1{
     text-align: center;
+    background-color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
 .task1 h1{
-    background-color: aquamarine;
+    margin-top: 0px;
+
+}
+.task2{
+    text-align: center;
+    background-color: rgb(204, 211, 216);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
