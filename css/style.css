@@ -341,7 +341,19 @@ padding-bottom: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-#task1 h1{
+
+.t1h1{
+        background-color: skyblue;
+        color: red;
+}
+
+.t1b1{
+    background-color: white;
+border-radius: 10px;
+color: deepskyblue;
+}
+
+/* #task1 h1{
     background-color: skyblue;
     color: white;
 }
@@ -350,4 +362,4 @@ padding-bottom: 20px;
 background-color: white;
 border-radius: 10px;
 color: deepskyblue;
-}
+} */
