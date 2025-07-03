@@ -1,7 +1,7 @@
 .heading{
     text-align: left;
 }
-
+/* -----------task 1 start--------------- */
 .task1{
     text-align: center;
     background-color: aliceblue;
@@ -12,12 +12,20 @@
     margin-top: 0px;
 
 }
+
+/* -----------task 1 finish--------------- */
+/* -----------task 2 start--------------- */
+
+
 .task2{
     text-align: center;
     background-color: rgb(204, 211, 216);
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/* -----------task 2 finish--------------- */
+/* -----------task 3 start--------------- */
 
 #tasknmbr3{
 margin: 0 auto;
@@ -39,6 +47,8 @@ text-align: center;
     height: 50px;
     border-radius: 50%;
 }
+/* -----------task 3 finish--------------- */
+/* -----------task 4 start--------------- */
 
 #yel{
     background-color: yellow;
@@ -59,6 +69,8 @@ text-align: center;
     align-items: center;
     gap: 10px;
 }
+/* -----------task 4 finish--------------- */
+/* -----------task 5 start--------------- */
 
 .task5{
     text-align: center;
@@ -66,3 +78,42 @@ text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.erro{
+    font-size: 15px;
+    color: red;
+}
+
+/* -----------task 5 finish--------------- */
+/* -----------task 6 start--------------- */
+
+.task6{
+ text-align: center;
+}
+
+.nameinput{
+    height: 40px;
+}
+.shtxt{
+    height: 40px;
+}
+.task6 button.tsk6b1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.task6 button.tsk6b2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}.task6 button.tsk6b3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.errortsk6{
+    font-size: 15px;
+    color: red;
+}
+
+/* -----------task 6 finish--------------- */
