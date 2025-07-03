@@ -12,7 +12,7 @@ let t2b = document.querySelector('.t2b')
 
 t2b.addEventListener('click',()=>{
     t2h.style='color:green'
-    t2h.innerHTML="Task 2 completed"
+    t2h.innerHTML="Task 2 completed by Maayush"
     console.log("I am changed")
 })
 
@@ -58,6 +58,15 @@ subnum.addEventListener('click', ()=>{
             result.innerHTML=(number)
     console.log(number)
     }
+})
+
+
+let input = document.querySelector('.input')
+let shbtn = document.querySelector('.shbtn')
+let shrlst = document.querySelector('.shrslt')
+
+shbtn.addEventListener('click',()=>{
+    shrlst.innerHTML=(input.value)
 })
 
 
