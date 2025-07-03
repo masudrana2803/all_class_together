@@ -125,13 +125,3 @@ tsk6bt3.addEventListener('click',()=>{
     shorslt.style = 'color:green'
 })
 
-// console.log("hi")
-
-// let alu = document.querySelector('h1')
-// let alu2 = document.querySelector('button')
-
-// console.log="hello";
-
-// alu.addEventListener('click', ()=>{
-//     h1.style=('color:red');
-// })
