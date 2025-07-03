@@ -86,6 +86,7 @@ shbtn.addEventListener('click', ()=>{
     else{
         erro.innerHTML=''
         shrlst.innerHTML=(input.value)
+        input.value=''
     }
 })
 
@@ -109,6 +110,7 @@ shtxt.addEventListener('click',()=>{
     }else{
         errortsk6.innerHTML=''
         shorslt.innerHTML=(nameinput.value)
+        nameinput.value=''
     }
 })
 
