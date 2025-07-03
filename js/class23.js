@@ -39,6 +39,26 @@ res.addEventListener('click', ()=>{
     task3.style='background:black;transition:1s'
 })
 
+let addnum = document.querySelector('.addnum')
+let subnum = document.querySelector('.subnum')
+let result = document.querySelector('.result')
+let number = 1
+
+addnum.addEventListener('click', ()=>{
+    number++
+    result.innerHTML=(number)
+    console.log(number)
+
+})
+
+subnum.addEventListener('click', ()=>{
+
+    if (number>=1) {
+            number--
+            result.innerHTML=(number)
+    console.log(number)
+    }
+})
 
 
 // console.log("hi")
