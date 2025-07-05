@@ -127,3 +127,19 @@ tsk6bt3.addEventListener('click',()=>{
     shorslt.style = 'color:green'
 })
 
+
+let timenmbr = document.querySelector('.timenmbr')
+let timego = document.querySelector('.timego')
+let timeresult = document.querySelector('.timeresult')
+
+i=0
+
+timego.addEventListener('click',()=>{
+if (timenmbr.value=='') {
+    timeresult.innerHTML=("Please set a value first")
+} else {
+    
+}
+
+
+})
