@@ -138,11 +138,10 @@ timego.addEventListener('click',()=>{
 if (timenmbr.value=='') {
     timeresult.innerHTML=("Please set a value first")
 } else {
-    for(let i = 1; i <= 9; i++)
+    for(let i = 0; i < 11; i++)
     {
-    console.log(timenmbr.value + 'x' + i + '=' +  timenmbr.value*i)
+    timeresult.innerHTML+=(timenmbr.value + 'x' + i + '=' +  timenmbr.value*i)
+    
     }
 }
-
-
 })
