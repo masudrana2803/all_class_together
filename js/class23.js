@@ -131,17 +131,19 @@ tsk6bt3.addEventListener('click',()=>{
 let timenmbr = document.querySelector('.timenmbr')
 let timego = document.querySelector('.timego')
 let timeresult = document.querySelector('.timeresult')
+let lin1 = document.querySelector('.lin1')
 
 i=0
 
 timego.addEventListener('click',()=>{
 if (timenmbr.value=='') {
-    timeresult.innerHTML=("Please set a value first")
+    lin1.innerHTML=("Please set a value first")
 } else {
+    timenmbr.value==''
     for(let i = 0; i < 11; i++)
     {
-    timeresult.innerHTML+=(timenmbr.value + 'x' + i + '=' +  timenmbr.value*i)
-    
+    timeresult.innerHTML+=''
+    timeresult.innerHTML+=(timenmbr.value + 'x' + i + '=' +  timenmbr.value*i + '<br>' )
     }
 }
 })
