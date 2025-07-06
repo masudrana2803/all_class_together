@@ -137,8 +137,11 @@ i=0
 timego.addEventListener('click',()=>{
 if (timenmbr.value=='') {
     timeresult.innerHTML=("Please set a value first")
-} else {(i=input, i<11, i++)
-    timeresult.innerHTML=(i + x input = input*i)
+} else {
+    for(int i = 1; i <= 9; i++)
+    {
+        
+    }
 }
 
 
