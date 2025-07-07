@@ -1,3 +1,5 @@
+AOS.init();
+
 // -------------task1 start------------------
 
 let t1h = document.querySelector('.t1h')
@@ -138,12 +140,18 @@ i=0
 timego.addEventListener('click',()=>{
 if (timenmbr.value=='') {
     lin1.innerHTML=("Please set a value first")
+    lin1.style='color:red'
+    timeresult.innerHTML=''
 } else {
     timeresult.innerHTML=''
+    timeresult.style='box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;'
     for(let i = 0; i < 11; i++)
         {
             timeresult.innerHTML+=(timenmbr.value + 'x' + i + '=' +  timenmbr.value*i + '<br>')
             lin1.innerHTML=("I am the result for  "+ timenmbr.value)
+            lin1.style='color:rgb(189, 59, 20)'
+            timeresult.style='color:rgb(189, 59, 20);background-color:rgb(154, 203, 203);box-shadow: rgba(188, 145, 145, 0.35) 0px -50px 36px -28px inset;'
+
         }
         timenmbr.value=''
     }
