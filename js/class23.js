@@ -142,6 +142,7 @@ if (timenmbr.value=='') {
     lin1.innerHTML=("Please set a value first")
     lin1.style='color:red'
     timeresult.innerHTML=''
+    timeresult.style='background:none'
 } else {
     timeresult.innerHTML=''
     timeresult.style='box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;'
