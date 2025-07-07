@@ -122,9 +122,28 @@ text-align: center;
 /* -----------task 6 finish--------------- */
 /* -----------task 7 start---------------- */
 #task7{
+    max-width: 100%;
+    height: 400px;
     text-align: center;
+    position: relative;
 }
 
 .time-table{
     height: 50px;
+}
+
+.lin2{
+    width: 200px;
+    height: 350px;
+    background-color: red;
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    padding-top: 10px;
+}
+
+.differ{
+display: flex;
+justify-content: center;
+align-items: center;
 }
