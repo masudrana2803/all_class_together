@@ -129,13 +129,14 @@ tsk6bt3.addEventListener('click',()=>{
     shorslt.style = 'color:green'
 })
 
+// -------------task6 finish------------------
+// -------------task7 start------------------
 
 let timenmbr = document.querySelector('.timenmbr')
 let timego = document.querySelector('.timego')
 let timeresult = document.querySelector('.timeresult')
 let lin1 = document.querySelector('.lin1')
 
-i=0
 
 timego.addEventListener('click',()=>{
 if (timenmbr.value=='') {
@@ -157,3 +158,23 @@ if (timenmbr.value=='') {
         timenmbr.value=''
     }
 })
+
+// -------------task7 finish------------------
+// -------------task8 start------------------
+let t8inp = document.querySelector('.t8inp')
+let t8result = document.querySelector('.t8result')
+
+let handelButton = ()=>{
+    t8result.innerHTML = ''
+    if(t8inp.value==''){
+        alert('you must have to set a number')
+    } else{
+        for(let i = 0; i < 11; i++)
+        {
+            t8result.innerHTML+=(t8inp.value + 'x' + i + '=' +  t8inp.value*i + '<br>')
+           
+        }
+        t8inp.value=''
+    }
+    
+}
