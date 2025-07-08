@@ -9,14 +9,26 @@
     
     <ul>
         <li>
-            always keep the style.css file right after document name
+            always keep the <span style="color: red;">style.css</span> file right before head closing.
+        </li>
+        <li>
+            always keep the <span style="color: red;">script.js</span> file right before the body ending.
         </li>
         <li>
             to receive input type only a number we should use :
             <br>
+            <span style="color: blue;">
             type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            </span>
             <br>
             inside input button.
+        </li>
+        <li>
+            in replace of <span style="color: red;">.addEventListener</span> we can use <span style="color: blue;">onclick="handelButton()"</span> in the html file. <br>
+            but we need to declare it in the dom of js file. <span style="color: blue;">let handelButton = ()=>{ <span style="color: red;text-decoration: underline;">all activity upon clicking}</span>.
+        </li>
+        <li>
+            <span style="color: red;">(!input.value) </span> means the value of declared input is blank.
         </li>
     </ul>
 
