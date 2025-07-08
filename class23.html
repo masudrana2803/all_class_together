@@ -96,7 +96,7 @@
 <section id="task7">
     <h1 style="text-align: center;color:pink;">I am task 7</h1>
 
-<input class="timenmbr time-table" type="text" placeholder="enter the number" style="text-align: center;">
+<input class="timenmbr time-table" type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="enter the number" style="text-align: center;">
 <button class="timego time-table">Go</button>
 
 <div class="differ">

@@ -79,6 +79,31 @@ text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.task5 .input{
+    text-align: center;
+    height: 55px;
+    width: 200px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 15px;
+    background-color: rgb(221, 134, 117);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.shbtn{
+    text-align: center;
+    height: 55px;
+    width: 80px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 15px;
+    background-color: rgb(221, 134, 117);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+
 .erro{
     font-size: 15px;
     color: red;
