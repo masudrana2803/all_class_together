@@ -92,10 +92,23 @@ text-align: center;
 }
 
 .nameinput{
-    height: 40px;
+    text-align: center;
+    height: 55px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 15px;
+    background-color: rgb(139, 233, 192);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
 }
 .shtxt{
-    height: 40px;
+    width: 100px;
+    height: 55px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 15px;
+    background-color: rgb(139, 233, 192);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 
