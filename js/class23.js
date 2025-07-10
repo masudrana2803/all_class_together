@@ -180,6 +180,7 @@ let handelButton = ()=>{
 }
 // -------------task8 finish------------------
 // -------------task9 start-------------------
+
 let input1 = document.querySelector('.input1')
 let result2= document.querySelector('.result2')
 
@@ -194,3 +195,4 @@ let handelButtton=()=>{
       }
     }
 }
+
