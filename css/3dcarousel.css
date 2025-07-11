@@ -9,11 +9,11 @@
 	box-sizing: border-box;
 }
 
-body {
+#sphere {
 	margin: 0;
 	padding: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 800px;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
@@ -29,9 +29,9 @@ body {
 	position: relative;
 	animation: spin 5s linear 0s infinite;
 	animation-play-state: running;
-	/* display: flex;
+	display: flex;
 	align-items: center;
-	justify-content: center; */
+	justify-content: center;
 	cursor: none;
 }
 
@@ -256,4 +256,11 @@ a:hover {
 	100% {
 		filter: hue-rotate(540deg);
 	}
+}
+
+/* ---------------logics start------------------ */
+#logics{
+		width: 100vw;
+		height: 400px;
+		background-color: aqua;
 }
