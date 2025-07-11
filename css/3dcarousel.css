@@ -29,9 +29,9 @@ body {
 	position: relative;
 	animation: spin 5s linear 0s infinite;
 	animation-play-state: running;
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 	cursor: none;
 }
 
