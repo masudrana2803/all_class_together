@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guess_game</title>
     <link rel="stylesheet" href="css/guessgame.css">
 </head>
@@ -11,11 +11,27 @@
     <h1 style="text-align: center; margin: 0px;">I am guess game</h1>
 </section>
 
-<div class="player1">
-    <h2 style="text-align: center;">Player 1</h2>
-    <input class="input1" type="number" placeholder="enter the number">
-    <button>Go</button>
-</div>
+    <h2 class="commonhead">Player 1</h2>
 
+
+<section id="player1">
+    <input class="input1 pl1" type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="p1 enter the number">
+    <button>Go</button>
+</section>
+
+
+<section id="player2">
+    <input class="input1 pl2" type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="p2 enter the number">
+    <button class="p2g">Go</button>
+</section>
+
+
+<section id="player3">
+    <input class="input1 pl3" type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="p3 enter the number">
+    <button class="p3g">Go</button>
+</section>
+
+
+<button type="submit">yui</button>
 </body>
 </html>
