@@ -13,7 +13,8 @@ let player1 = document.querySelector('.player1')
 let player2 = document.querySelector('.player2')
 let player3 = document.querySelector('.player3')
 
-
+let g1 = document.querySelector('pl1.value')
+let heading = document.querySelector('#heading')
 
 
 
@@ -36,9 +37,26 @@ p1g.addEventListener('click',()=>{
   }
 })
 
-// p2g.addEventListener('click',()=>{
-//     error.innerHTML=("Set a value first for the player 2")
-// })
-// p3g.addEventListener('click',()=>{
-//     error.innerHTML=("Set a value first for the player 3")
-// })
+p2g.addEventListener('click',()=>{
+  if (pl2.value==pl1.value) {
+    error.innerHTML=''
+    mainhead.innerHTML='You are the winner'
+    mainhead.style='font-size:50px;color:red'
+    p2g.style='display:none'
+    heading.style='display:none'
+
+  }else{
+    if (pl2.value=='') {
+        error.innerHTML='Set value P2'
+    }else{
+        if (pl2.value<=10) {
+        error.innerHTML= 'Nopes! you have entered ' + pl2.value
+        pl2.value=''
+        }
+        else{
+        error.innerHTML='Set a value between 0-10'
+        pl2.value=''        
+        }
+    }
+  }  
+})

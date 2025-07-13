@@ -28,7 +28,7 @@ body{
 }
 
 .error{
-    color: red;
+    color: blue;
     margin-left: -50px;
     font-weight: 500;
 }
