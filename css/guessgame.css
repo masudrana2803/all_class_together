@@ -44,7 +44,13 @@ body{
     text-align: center;
 }
 
+.player2{
+    display: none;
+}
 
+.player3{
+    display: none;
+}
 
 button{
     color: red;

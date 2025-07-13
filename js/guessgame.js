@@ -5,12 +5,19 @@ let p1g = document.querySelector('.p1g')
 let p2g = document.querySelector('.p2g')
 let p3g = document.querySelector('.p3g')
 let error = document.querySelector('.error')
+let pl1 = document.querySelector('.pl1')
 
 
 
 
 p1g.addEventListener('click',()=>{
     error.innerHTML=("Set a value first for the player 1")
+    if (pl1.value <11) {
+        console.log(pl1.value)
+        
+    }else{
+        console.log("set number between 1-10")
+    }
 })
 p2g.addEventListener('click',()=>{
     error.innerHTML=("Set a value first for the player 2")
