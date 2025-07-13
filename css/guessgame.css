@@ -25,7 +25,12 @@ body{
 .commonhead{
     color: rgb(231, 201, 201);
     margin-bottom: 10px;
+}
 
+.error{
+    color: red;
+    margin-left: -50px;
+    font-weight: 500;
 }
 
 .input1{
