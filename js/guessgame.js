@@ -31,7 +31,7 @@ p1g.addEventListener('click',()=>{
         
     } else {
         error.innerHTML='Set a value between 0-10'
-
+        pl1.value=''
     }
   }
 })
