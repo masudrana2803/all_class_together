@@ -24,7 +24,7 @@ body{
 
 .commonhead{
     color: rgb(231, 201, 201);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -39,12 +39,33 @@ body{
     text-align: center;
 }
 
-/* 
+
+
 button{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: none;
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    border: 2px solid blue;
-    back: aquamarine;
-} */
+    border: 2px solid black;
+}
 
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* button{
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        border: 2px solid blue;
+        background-color: aquamarine;
+    }
+    */
