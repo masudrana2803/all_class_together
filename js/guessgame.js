@@ -10,18 +10,26 @@ let pl1 = document.querySelector('.pl1')
 
 
 
+
+
 p1g.addEventListener('click',()=>{
-    error.innerHTML=("Set a value first for the player 1")
-    if (pl1.value <11) {
+  if (pl1.value=='') {
+    error.innerHTML=("Please set a value first")
+  }else{
+    if (pl1.value<=10) {
+        error.innerHTML=''
+        error.innerHTML=''
         console.log(pl1.value)
+        pl1.value=''
+    } else {
         
-    }else{
-        console.log("set number between 1-10")
     }
+  }
 })
-p2g.addEventListener('click',()=>{
-    error.innerHTML=("Set a value first for the player 2")
-})
-p3g.addEventListener('click',()=>{
-    error.innerHTML=("Set a value first for the player 3")
-})
+
+// p2g.addEventListener('click',()=>{
+//     error.innerHTML=("Set a value first for the player 2")
+// })
+// p3g.addEventListener('click',()=>{
+//     error.innerHTML=("Set a value first for the player 3")
+// })
