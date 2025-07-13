@@ -52,8 +52,29 @@ body{
     display: none;
 }
 
-button{
+.p1g{
     color: red;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.p2g{
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.p3g{
+    color: blue;
     font-size: 20px;
     font-weight: 700;
     background-color: none;
