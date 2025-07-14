@@ -67,7 +67,7 @@ p2g.addEventListener('click',()=>{
           player3.style='display:block'
           mainhead.innerHTML=("Player 3")
           pl3.value=''
-          count.innerHTML=0
+          count.innerHTML=chance
         } else {
           error.innerHTML='Set a value between 0-10'
           pl2.value=''            
@@ -86,6 +86,7 @@ p3g.addEventListener('click',()=>{
     faltu.innerHTML=''
     p3g.style='display:none'
     heading.style='display:none'
+    chance=0
   }else{
     if (pl3.value=='') {
         error.innerHTML='Set value P3'
@@ -94,8 +95,8 @@ p3g.addEventListener('click',()=>{
         if (pl3.value<=10) {
         error.innerHTML= 'Nopes! you have entered ' + pl3.value
         pl3.value=''
-        count.innerHTML=0
-
+        chance=0
+        chance++
         if (chance==2) {
           console.log('Winner is P1')
           player2.style='display:none'
