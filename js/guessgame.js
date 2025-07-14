@@ -15,8 +15,10 @@ let player3 = document.querySelector('.player3')
 
 let g1 = document.querySelector('pl1.value')
 let heading = document.querySelector('#heading')
-let chance = document.querySelector('.chance')
-
+let faltu = document.querySelector('.faltu')
+let count = document.querySelector('.count')
+let chance=0
+count.innerHTML=chance
 
 p1g.addEventListener('click',()=>{
   if (pl1.value=='') {
@@ -27,7 +29,9 @@ p1g.addEventListener('click',()=>{
         console.log(pl1.value)
         player1.style='display:none'
         player2.style='display:block'
+        faltu.style='display:block'
         pl2.value=''
+        chance.style='display:block'
         mainhead.innerHTML=("Player 2")
         chance.style='display:block'
         
@@ -41,7 +45,8 @@ p1g.addEventListener('click',()=>{
 p2g.addEventListener('click',()=>{
   if (pl2.value==pl1.value) {
     error.innerHTML=''
-    mainhead.innerHTML='You are the winner'
+    mainhead.innerHTML='You are the winner P2'
+    faltu.innerHTML=''
     mainhead.style='font-size:50px;color:red'
     p2g.style='display:none'
     heading.style='display:none'
@@ -49,15 +54,60 @@ p2g.addEventListener('click',()=>{
   }else{
     if (pl2.value=='') {
         error.innerHTML='Set value P2'
-    }else{
+    }
+    else{
         if (pl2.value<=10) {
         error.innerHTML= 'Nopes! you have entered ' + pl2.value
         pl2.value=''
+        chance++
+        count.innerHTML=chance
+        if (chance==2) {
+          console.log('I am the')
+          player2.style='display:none'
+          player3.style='display:block'
+          mainhead.innerHTML=("Player 3")
+          pl3.value=''
+        } else {
+          error.innerHTML='Set a value between 0-10'
+          pl2.value=''            
         }
-        else{
-        error.innerHTML='Set a value between 0-10'
-        pl2.value=''        
-        }
+      }
+
     }
-  }  
+  }
+})
+
+p3g.addEventListener('click',()=>{
+  if (pl3.value==pl1.value) {
+    error.innerHTML=''
+    mainhead.innerHTML='Congratulations!You are the winner P3'
+    mainhead.style='font-size:50px;color:red'
+    faltu.innerHTML=''
+    p3g.style='display:none'
+    heading.style='display:none'
+    chance=0
+  }else{
+    if (pl3.value=='') {
+        error.innerHTML='Set value P3'
+    }
+    else{
+        if (pl3.value<=10) {
+        error.innerHTML= 'Nopes! you have entered ' + pl3.value
+        pl3.value=''
+        chance=0
+        chance++
+        if (chance==2) {
+          console.log('Winner is P1')
+          player2.style='display:none'
+          player3.style='display:block'
+          mainhead.innerHTML=("Player 3")
+          pl3.value=''
+        } else {
+          error.innerHTML='Set a value between 0-10'
+          pl2.value=''            
+        }
+      }
+
+    }
+  }
 })

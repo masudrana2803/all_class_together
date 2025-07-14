@@ -23,23 +23,39 @@ body{
 }
 
 .commonhead{
+    height: 20px;
     color: rgb(231, 201, 201);
     margin-bottom: 10px;
 }
 
-.chance{
+
+.mainrow{
     display: flex;
-    justify-content: start;
-    margin-left: 200px;
-    /* display: none; */
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-.samerow{
+.mainrow p{
+    padding-top: 4px;
+}
+
+.chance{
+    color: red;
+    display: none;
+}
+
+.faltu{
+    display: none;
+    color: red;
+}
+
+/* .samerow{
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-}
+} */
 .error{
     color: blue;
     margin-left: -50px;
