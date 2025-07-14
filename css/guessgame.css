@@ -27,6 +27,19 @@ body{
     margin-bottom: 10px;
 }
 
+.chance{
+    display: flex;
+    justify-content: start;
+    margin-left: 200px;
+    /* display: none; */
+}
+
+.samerow{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
 .error{
     color: blue;
     margin-left: -50px;

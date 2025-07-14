@@ -15,7 +15,7 @@ let player3 = document.querySelector('.player3')
 
 let g1 = document.querySelector('pl1.value')
 let heading = document.querySelector('#heading')
-
+let chance = document.querySelector('.chance')
 
 
 p1g.addEventListener('click',()=>{
@@ -29,6 +29,7 @@ p1g.addEventListener('click',()=>{
         player2.style='display:block'
         pl2.value=''
         mainhead.innerHTML=("Player 2")
+        chance.style='display:block'
         
     } else {
         error.innerHTML='Set a value between 0-10'
