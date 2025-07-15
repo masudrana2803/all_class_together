@@ -15,7 +15,7 @@ let player3 = document.querySelector('.player3')
 
 let g1 = document.querySelector('pl1.value')
 let heading = document.querySelector('#heading')
-let faltu = document.querySelector('.faltu')
+let countchance = document.querySelector('.countchance')
 let count = document.querySelector('.count')
 let chance=0
 count.innerHTML=chance
@@ -29,13 +29,12 @@ p1g.addEventListener('click',()=>{
         console.log(pl1.value)
         player1.style='display:none'
         player2.style='display:block'
-        faltu.style='display:block'
+        countchance.style='display:block'
         pl2.value=''
         chance.style='display:block'
-        mainhead.innerHTML=("Player 2")
-        chance.style='display:block'
-        
-    } else {
+        mainhead.innerHTML=("Player 2")        
+    } 
+    else {
         error.innerHTML='Set a value between 0-10'
         pl1.value=''
     }
@@ -46,7 +45,7 @@ p2g.addEventListener('click',()=>{
   if (pl2.value==pl1.value) {
     error.innerHTML=''
     mainhead.innerHTML='You are the winner P2'
-    faltu.innerHTML=''
+    countchance.innerHTML=''
     mainhead.style='font-size:50px;color:red'
     p2g.style='display:none'
     heading.style='display:none'
@@ -83,7 +82,7 @@ p3g.addEventListener('click',()=>{
     error.innerHTML=''
     mainhead.innerHTML='Congratulations!You are the winner P3'
     mainhead.style='font-size:50px;color:red'
-    faltu.innerHTML=''
+    countchance.innerHTML=''
     p3g.style='display:none'
     heading.style='display:none'
     chance=0
