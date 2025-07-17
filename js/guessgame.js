@@ -52,6 +52,11 @@ p2g.addEventListener('click',()=>{
     p2g.style='display:none'
     heading.style='display:none'
   }
+  else{
+    if (condition) {
+      
+    }
+  }
   })
 
 
