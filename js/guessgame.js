@@ -46,6 +46,7 @@ p2g.addEventListener('click',()=>{
   if (pl2.value==pl1.value) {
     mainhead.innerHTML='You are the winner P2'
     error.innerHTML=''
+    pl2.style='display:none'
     countchance.innerHTML=''
     mainhead.style='font-size:50px;color:red'
     p2g.style='display:none'
@@ -98,7 +99,7 @@ p3g.addEventListener('click',()=>{
     else{
       if (pl3.value<=10) {
         error.innerHTML= 'Nopes! you have entered ' + pl3.value
-        pl2.value=''
+        pl3.value=''
         chance++
         count.innerHTML=chance
     }
