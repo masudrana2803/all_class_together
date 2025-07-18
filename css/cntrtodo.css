@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0c7f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  padding: 40px;
+  background: #f7f1fc;
+  border-radius: 12px;
+}
+
+input.qwe{
+    padding-left: 30px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    padding-top: 20px;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
