@@ -35,7 +35,7 @@ btn.forEach((button, index) => {
             number++;
             console.log(number);
             show[index].innerHTML = number;
-            if (qwe.value==='') {
+            if (!qwe.value) {
                 console.error('set a number')
                 
             }else{
