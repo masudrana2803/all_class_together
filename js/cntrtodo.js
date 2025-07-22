@@ -35,13 +35,17 @@ btn.forEach((button, index) => {
             number++;
             console.log(number);
             show[index].innerHTML = number;
+            if (qwe.value==='') {
+                console.error('set a number')
+                
+            }else{
 
-            if (number == qwe[index].value) {
-                clearInterval(myinterval);
-                number = 0;
+                if (number == qwe[index].value) {
+                    clearInterval(myinterval);
+                    number = 0;
+                }
             }
         };
-
         let myinterval = setInterval(mycounter, 50);
     });
 });
