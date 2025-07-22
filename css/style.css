@@ -363,3 +363,20 @@ background-color: white;
 border-radius: 10px;
 color: deepskyblue;
 } */
+
+#imagePreview {
+  max-width: 100%;
+  max-height: 400px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.prev{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    width: 800px;
+
+}
