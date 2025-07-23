@@ -37,8 +37,7 @@ btn.forEach((button, index) => {
             show[index].innerHTML = number;
             if (qwe[index].value=='') {
                 alert('set a value')
-                console.error('set a number')
-                    clearInterval(myinterval);
+                clearInterval(myinterval);
             show[index].innerHTML = 0;
                 
             }else{
