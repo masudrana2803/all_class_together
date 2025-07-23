@@ -27,8 +27,8 @@ body {
     /* grid-template-columns: repeat(3,1fr); */
   gap: 30px;
   padding: 40px;
-  background: #ebeaec;
-  opacity: 40%;
+  background: #e9e4ed;
+  opacity: 70%;
   border-radius: 12px;
 }
 
@@ -60,6 +60,15 @@ input.qwe{
   .btn{
     margin-top: 10px;
     border-radius: 45px;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 
+  .btn:hover{
+    background-color:blue;
+    opacity: 50%;
+    color: white;
+  }
   
