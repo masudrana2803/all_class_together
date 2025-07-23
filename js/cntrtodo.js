@@ -35,8 +35,11 @@ btn.forEach((button, index) => {
             number++;
             console.log(number);
             show[index].innerHTML = number;
-            if (qwe.value==='') {
+            if (qwe[index].value=='') {
+                alert('set a value')
                 console.error('set a number')
+                    clearInterval(myinterval);
+            show[index].innerHTML = 0;
                 
             }else{
 
@@ -46,6 +49,6 @@ btn.forEach((button, index) => {
                 }
             }
         };
-        let myinterval = setInterval(mycounter, 50);
+        let myinterval = setInterval(mycounter, 100);
     });
 });
