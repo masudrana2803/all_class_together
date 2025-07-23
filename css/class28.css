@@ -1,0 +1,14 @@
+.container{
+  width: 100%;
+}
+
+image{
+    width: 100%;
+    /* max-width: 100%; */
+    vertical-align: center;
+}
+
+
+body{
+    background-image: url(../images/scooter/scooter.png);
+}
