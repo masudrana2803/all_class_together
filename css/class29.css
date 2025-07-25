@@ -1,0 +1,60 @@
+/* button codes
+edit= <i class="fa-solid fa-pen-to-square"></i>
+delete = <i class="fa-solid fa-trash"></i>
+done  = <i class="fa-solid fa-check"></i> */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 400px;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+}
+.addtodo{
+    height: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.addtodo input{
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.addtodo button{
+width: 50px;
+border: none;
+border-radius: 10px;
+}
+
+.singleToDo{
+    height: 30px;
+    display: flex;
+    margin-top:10px ;
+}
+
+.singleToDo input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+.singleToDo button{
+    margin-left: 10px;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+}
