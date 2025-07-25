@@ -30,6 +30,7 @@ const handleAdd = () => {
 
   singleToDo_input.value=adding.value
   singleToDo_input.setAttribute('readonly', '')
+  adding.value=''
 
   // Append child
   allToDo.appendChild(singleToDo)
