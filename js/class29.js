@@ -1,6 +1,9 @@
-let addbutton = document.querySelector('.addbutton');
+
 let main = document.querySelector('.main')
+let adding = document.querySelector('.adding')
+let addbutton = document.querySelector('.addbutton');
 let allToDo = document.querySelector('.allToDo')
+let error=document.querySelector('.error')
 let totalToDo=document.querySelector('.totalToDo')
 totalToDo.innerHTML=0
 let doneToDo=document.querySelector('.doneToDo')
@@ -9,9 +12,12 @@ let number=0
 
 const handleAdd = () => {
   console.log('Ha clicked')
-  number++
-  totalToDo.innerHTML=number
-
+  
+  if(adding.value=='')return(error.innerHTML='Write something please!')
+    
+    number++
+    totalToDo.innerHTML=number
+    error.innerHTML=''
   // Create tage elements
   let singleToDo = document.createElement('div')
   let singleToDo_input = document.createElement('input')
@@ -19,6 +25,11 @@ const handleAdd = () => {
   let deleteButton = document.createElement('button')
   let doneButton = document.createElement('button')
 
+
+
+
+  singleToDo_input.value=adding.value
+  singleToDo_input.setAttribute('readonly', '')
 
   // Append child
   allToDo.appendChild(singleToDo)
