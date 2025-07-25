@@ -5,6 +5,7 @@ let addbutton = document.querySelector('.addbutton');
 let allToDo = document.querySelector('.allToDo')
 let singleToDo = document.querySelector('.singleToDo')
 let error=document.querySelector('.error')
+  error.innerHTML=""
 
 let totalToDo=document.querySelector('.totalToDo')
 let totalToDoNo=0
@@ -19,10 +20,11 @@ doneToDo.innerHTML=doneToDoNo
   let deleteButton = document.createElement('button')
   let doneButton = document.createElement('button')
 
+
 // add to do 
 const handleAdd = () => {
   console.log('Ha clicked')
-    // if(adding.value=='')return(error.innerHTML='Write something please!')
+    if(adding.value=='')return(error.innerHTML='Write something please!')
 
   // Create tage elements
   // let singleToDo = document.createElement('div')
