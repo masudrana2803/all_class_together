@@ -41,18 +41,32 @@ border: none;
 border-radius: 10px;
 }
 
-.singleToDo{
-    height: 30px;
+.allToDo{
     display: flex;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
-.singleToDo input{
+.singleToDo_input{
     width: 100%;
     border-radius: 10px;
     border: none;
 }
-.singleToDo button{
+
+.deleteButton{
+    margin-left: 5px;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.doneButton{
+    margin-left: 5px;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.editButton{
     margin-left: 5px;
     width: 30px;
     border-radius: 10px;
