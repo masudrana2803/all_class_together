@@ -76,6 +76,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 10px;
+display: none;
+
 }
 
 .singleToDo_input{
@@ -83,7 +85,9 @@ margin-top: 10px;
     border-radius: 10px;
     border: none;
     width: 300px;
+    margin-top: 10px;
 }
+
 
 .deleteButton{
         height: 30px;
@@ -95,15 +99,15 @@ margin-top: 10px;
 }
 
 .doneButton{
-        height: 30px;
-                width: 25px;
+    height: 30px;
+    width: 25px;
     border-radius: 10px;
     border: none;
 }
 
 .editButton{
-        height: 30px;
-                width: 25px;        
+    height: 30px;
+    width: 25px;        
     border-radius: 10px;
     border: none;
     margin-left: 5px;
