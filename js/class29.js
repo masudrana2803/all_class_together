@@ -108,6 +108,8 @@ const handleAdd = () => {
     console.log('done it')
     doneToDoNo++
     doneToDo.innerHTML=doneToDoNo
+    deleteButton.remove()
+    editButton.remove()
   })
   
 
