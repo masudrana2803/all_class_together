@@ -1,141 +1,165 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
-/* Basic styling for the new tab content, will be injected */
-.invoice-container {
-    font-family: 'Inter', sans-serif;
-    padding: 2rem;
+
+.container {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 0 auto;
     background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.invoice-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
 }
-.invoice-header-row1 {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem; /* Space between first and second row */
+
+.input-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
-.invoice-logo {
-    width: 300px; /* Set logo width to 300px as requested */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Cap height to keep it reasonable */
-    flex-shrink: 0;
-    border-radius: 8px;
-    background-color: #e0e7ff; /* Light blue background for placeholder */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #4f46e5;
-    font-size: 1.5rem;
-    overflow: hidden; /* Ensure content doesn't spill */
 }
-.invoice-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Use contain to ensure full logo is visible */
+
+.input-section input[type="text"],
+.input-section input[type="number"],
+.input-section textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.invoice-details-name {
-    flex-grow: 1;
+
+.input-section textarea {
+    resize: vertical;
+    min-height: 60px;
 }
-.invoice-details-name h1 {
-    font-size: 3.5rem; /* Larger for main name */
-    font-weight: 700;
-    color: #1e40af;
-    margin-bottom: 0;
+
+.input-section button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
-.invoice-header-row2 h2 {
-    font-size: 1rem;
-    color: #4b5563;
-    line-height: 1.5;
-    margin-bottom: 0.25rem;
+
+.input-section button:hover {
+    background-color: #218838;
 }
-.invoice-table {
+
+.item-list-section {
+    margin-top: 30px;
+}
+
+#itemTable {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 15px;
 }
-.invoice-table th, .invoice-table td {
-    border: 1px solid #e5e7eb;
-    padding: 0.75rem;
+
+#itemTable th, #itemTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
 }
-.invoice-table th {
-    background-color: #f3f4f6;
-    font-weight: 600;
-    color: #374151;
+
+#itemTable th {
+    background-color: #0056b3;
+    color: white;
 }
-.invoice-table tfoot td {
-    font-weight: 700;
-    background-color: #f9fafb;
+
+#itemTable tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
-.invoice-table .text-right {
+
+.total-amount {
     text-align: right;
+    margin-top: 15px;
+    font-size: 1.2em;
 }
-.pdf-button-container, .llm-button-container {
+
+.actions {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 30px;
 }
-.pdf-button {
-    background-color: #22c55e;
+
+.actions button {
+    background-color: #007bff;
     color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
+    padding: 12px 20px;
     border: none;
-    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
-.pdf-button:hover {
-    background-color: #16a34a;
+
+.actions button:hover {
+    background-color: #0056b3;
 }
-.llm-button {
-    background-color: #8b5cf6; /* Purple for LLM feature */
+
+.edit-btn, .delete-btn {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
     color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.2s ease-in-out;
 }
-.llm-button:hover {
-    background-color: #7c3aed;
+
+.edit-btn:hover {
+    background-color: #e0a800;
 }
-.llm-output {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background-color: #f9fafb;
-    border: 1px dashed #d1d5db;
-    border-radius: 0.5rem;
-    color: #374151;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    min-height: 50px; /* Ensure space for content */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.delete-btn:hover {
+    background-color: #c82333;
 }
+
+/* Styles for the print view */
 @media print {
-    .pdf-button-container, .llm-button-container {
-        display: none; /* Hide buttons when printing */
-    }
     body {
-        background-color: #fff; /* White background for print */
-    }
-    .invoice-container {
-        box-shadow: none; /* No shadow in print */
         margin: 0;
-        border-radius: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #000;
+        font-size: 12px;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 20px;
         max-width: none;
+    }
+
+    .input-section, .actions, .edit-btn, .delete-btn {
+        display: none;
+    }
+
+    #itemTable {
+        border: 1px solid #000;
+    }
+
+    #itemTable th, #itemTable td {
+        border: 1px solid #000;
     }
 }
