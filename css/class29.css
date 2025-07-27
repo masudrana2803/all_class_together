@@ -65,15 +65,14 @@ border: none;
 border-radius: 10px;
 }
 
-/* .allToDo{
+.allToDo{
     height: 360px;
     overflow-y: scroll;
     padding-right: 0;
     
-} */
+}
 
 .singleToDo{
-width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -83,7 +82,6 @@ display: none;
 }
 
 .singleToDo_input{
-    width: 380px;
     height: 30px;
     border-radius: 10px;
     border: none;

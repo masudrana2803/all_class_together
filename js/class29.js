@@ -24,7 +24,7 @@ doneToDo.innerHTML=doneToDoNo
 // add to do 
 const handleAdd = () => {
   console.log('Ha clicked')
-    // if(adding.value=='')return(error.innerHTML='Write something please!')
+    if(adding.value=='')return(error.innerHTML='Write something please!')
 
   // Create tage elements
   // let singleToDo = document.createElement('div')
@@ -44,10 +44,10 @@ const handleAdd = () => {
 
   // classlist add
   // singleToDo.classList.add('singleToDo')
-  singleToDo.classList.add('singleToDo_input')
-  singleToDo.classList.add('editButton')
-  singleToDo.classList.add('deleteButton')
-  singleToDo.classList.add('doneButton')
+  singleToDo_input.classList.add('singleToDo_input')
+  editButton.classList.add('editButton')
+  deleteButton.classList.add('deleteButton')
+  doneButton.classList.add('doneButton')
 
 
 // button icons
