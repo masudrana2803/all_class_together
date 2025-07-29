@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const buyerName = buyerNameInput.value.trim();
         const buyerAddress = buyerAddressTextarea.value.trim();
         const companyName = "SF Jacquard Solution"; // Replace with your company name
-        const companyAddress = "Shop#8, Ambia Soroni Market <br> Boardbazar, Gazipur"; // Replace with your company address
+        const companyAddress = "Shop#8, Ambia Soroni Market <br> Boardbazar, Gazipur <br> Phone:01839-158932;01934-510458"; // Replace with your company address
         const companyLogo = "images/image1.jpg"; // Replace with your logo URL (300px width)
 
         if (!buyerName || !buyerAddress || items.length === 0) {
@@ -207,6 +207,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         margin-top: 50px;
                         font-size: 0.9em;
                     }
+
+                    .invoice-footer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 150px;
+                    }
+
+
                 </style>
             </head>
             <body>
@@ -258,9 +267,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="amount-in-words">
                     <p>Amount in Words: ${amountInWords}</p>
                 </div>
+
+                <div class="invoice-footer">
+                <div class="received">
+                    <p>Received by:____________</p>
+                </div>
+                <div class="authorised">
+                    <p>Authorised by:____________</p>
+                </div>
+                </div>
+
+
                 <div class="print-date">
                     <p>Print Date: ${printDate}</p>
                 </div>
+
+
+
+
+
             </body>
             </html>
         `;
