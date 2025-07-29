@@ -6,13 +6,17 @@
 //       })
 // })
 
+
+
 let results=document.querySelector('.results')
+let allUsers = []; // Store fetched users
 
 fetch('https://jsonplaceholder.typicode.com/users')
-.then((alu)=>alu.json())
+.then((apicheck)=>apicheck.json())
 .then((data)=>{
+      allUsers=data
 data.map((item)=>{
-
+      
       // -------------create tag
       let div=document.createElement('div')
       let h2=document.createElement('h2')
@@ -38,3 +42,4 @@ data.map((item)=>{
 
 })
 })
+

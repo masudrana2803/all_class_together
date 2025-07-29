@@ -5,8 +5,9 @@
 }
 
 .result1{
-    width: fit-content;
+    width:300px;
     padding:5px;
     border: 2px solid grey;
+    word-wrap: break-word;
 }
 
