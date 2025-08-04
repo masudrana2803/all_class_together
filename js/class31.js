@@ -1,6 +1,6 @@
-let fruits = ["banana","orange","pear","apple"]
+// let fruits = ["banana","orange","pear","apple"]
 
-let vegetables = ["carrot","broccoli","spinach","potato"]
+// let vegetables = ["carrot","broccoli","spinach","potato"]
 
 
 
