@@ -22,34 +22,39 @@ const listBorder = document.querySelector('.TotalStudentList');
 const addStudent=()=>{
     console.log('ha clicked')
     
-    if (!this.name, !this.roll,!this.id,!this.studentClass,!this.age) {
-        alert('Set all the value first')
+    if (
+        !studentName.value.trim() ||
+        !studentRoll.value.trim() ||
+        !studentId.value.trim() ||
+        !studentClass.value.trim() ||
+        !studentAge.value.trim()
+    ) {
+        alert('Set all the value first');
         return;
-        
     }
 // create tag element
 let ul = document.createElement('ul');
 
 let liName = document.createElement('li');
 // liName.textContent = `Student name:`+ studentName.value;
-liName.textContent = "Student Name"+":"+studentName.value
+liName.textContent = "Student Name:"+studentName.value
 ul.appendChild(liName);
 
 
 let liRoll = document.createElement('li');
-liRoll.textContent = `Roll:`;
+liRoll.textContent = "Roll:"+studentRoll.value
 ul.appendChild(liRoll);
 
 let liId = document.createElement('li');
-liId.textContent = `Id:`;
+liId.textContent = "Id:"+studentId.value
 ul.appendChild(liId);
 
 let liClass = document.createElement('li');
-liClass.textContent = `Class:`;
+liClass.textContent = "Class:"+studentClass.value
 ul.appendChild(liClass);
 
 let liAge = document.createElement('li');
-liAge.textContent = `Age:`;
+liAge.textContent = "Age"+studentAge.value.trim()
 ul.appendChild(liAge);
 
 listBorder.appendChild(ul);
