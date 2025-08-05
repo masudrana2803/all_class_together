@@ -14,12 +14,19 @@ const studentId = document.getElementById('studentId');
 const studentClass = document.getElementById('studentClass');
 const studentAge = document.getElementById('studentAge');
 
+// Get TotalStudent section and list-border
+const totalStudentSection = document.getElementById('TotalStudent');
+const listBorder = document.querySelector('.list-border');
+
+// Hide TotalStudent section initially
+totalStudentSection.style.display = "none";
+
+let students = [];
+
 // Helper to show inline error
 function showError(input, message) {
-    // Remove existing error
     let err = input.parentElement.querySelector('.input-error');
     if (err) err.remove();
-    // Create new error
     const span = document.createElement('span');
     span.className = 'input-error text-danger';
     span.style.fontSize = '0.9em';
@@ -35,28 +42,17 @@ function clearError(input) {
     input.classList.remove('is-invalid');
 }
 
-// Create a <ul> for student list if not present
-let studentList = document.getElementById('studentList');
-if (!studentList) {
-    const listBorder = document.querySelector('.list-border');
-    studentList = document.createElement('ul');
-    studentList.id = 'studentList';
-    studentList.className = 'list-group mt-3';
-    listBorder.appendChild(studentList);
-}
-
-let students = [];
-
 // Function to display students in the list
 function displayStudents() {
-    studentList.innerHTML = '';
-    if (students.length === 0) {
-        const li = document.createElement('li');
-        li.className = 'list-group-item text-muted text-center';
-        li.textContent = 'No students added yet.';
-        studentList.appendChild(li);
-        return;
-    }
+    // Remove old list if exists
+    let oldList = document.getElementById('studentList');
+    if (oldList) oldList.remove();
+
+    // Create new ul
+    const ul = document.createElement('ul');
+    ul.id = 'studentList';
+    ul.className = 'list-group mt-3';
+
     students.forEach(student => {
         const li = document.createElement('li');
         li.className = 'list-group-item';
@@ -67,8 +63,10 @@ function displayStudents() {
             <strong>Class:</strong> ${student.studentClass} |
             <strong>Age:</strong> ${student.age}
         `;
-        studentList.appendChild(li);
+        ul.appendChild(li);
     });
+
+    listBorder.appendChild(ul);
 }
 
 // Add student function
@@ -107,6 +105,9 @@ function addStudent() {
 
     if (!valid) return;
 
+    // Show TotalStudent section after first valid add
+    totalStudentSection.style.display = "block";
+
     const newStudent = new Student(name, roll, id, sClass, age);
     students.push(newStudent);
     displayStudents();
@@ -117,6 +118,3 @@ function addStudent() {
         clearError(input);
     });
 }
-
-// Show empty list on load
-displayStudents();
