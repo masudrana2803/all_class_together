@@ -17,8 +17,8 @@ body{
     background-color: azure;
 }
 
-#addStudentSection{
-   
+#addStudentSection input{
+   color: slategrey;
 }
 
 #addingData {
@@ -64,5 +64,10 @@ body{
 
 #TotalStudent{
     margin-top: 50px;
+}
+
+ul li{
+    list-style: none;
+    text-align: start;
 }
 
