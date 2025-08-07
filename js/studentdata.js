@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- UI Variables ---
     const studentForm = document.getElementById('student-form');
     const studentList = document.getElementById('student-list');
+    const totalStudent = document.getElementById('totalStudent')
     let studentCount = 0;
-
+    totalStudent.innerHTML="TotalStudent"+ ":" + ""+ studentCount++
     // --- Event Listener for Form Submission ---
     studentForm.addEventListener('submit', function(e) {
         // Prevent the form from actually submitting and reloading the page
@@ -41,7 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Function to Add Student to the UI ---
     function addStudentToList(student) {
-        studentCount++;
+
+        totalStudent.innerHTML="Total Student:"+ studentCount++
 
         // Create a new div for the student item
         const studentItem = document.createElement('div');
@@ -50,13 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create the HTML content for the new student entry
         // This matches the format shown in the provided image
         studentItem.innerHTML = `
-            <p class="name">${studentCount}. ${student.name}</p>
-            <p>রোল: ${student.roll}</p>
-            <p>আইডি: ${student.id}</p>
-            <p>ক্লাস: ${student.className}</p>
-            <p>বয়স: ${student.age}</p>
-            <p>উপস্থিত হতে পারে: ${student.attendance}</p>
-        `;
+            <p>Name:${student.name}</p> 
+            <p>Roll: ${student.roll}</p>
+            <p>ID: ${student.id}</p>
+            <p>Class: ${student.className}</p>
+            <p>Age: ${student.age}</p>
+            `;
+            
+            // <p>উপস্থিত হতে পারে: ${student.attendance}</p>
 
         // Append the new item to the list
         studentList.appendChild(studentItem);
